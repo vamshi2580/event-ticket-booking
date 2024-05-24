@@ -1,0 +1,153 @@
+<html>
+<style>
+body {
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: linear-gradient(to right, #43c6ac, #191654);
+}
+
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 80px;
+   box-sizing: border-box;
+   z-index: 100;
+}
+
+nav ul {
+   display: flex;
+}
+
+nav ul li {
+   list-style: none;
+   margin-right: 20px;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.logo {
+   font-size: 24px;
+   font-weight: 700;
+}
+
+.tickets {
+   background: #d64d4d;
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.hero {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   background: url('https://source.unsplash.com/1600x900/?festival') no-repeat center center/cover;
+}
+
+.hero h1 {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   color: #fff;
+   font-size: 48px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero button {
+   position: absolute;
+   bottom: 50px;
+   left: 50%;
+   transform: translateX(-50%);
+   background: #d64d4d;
+   color: #fff;
+   padding: 15px 30px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.info {
+   display: flex;
+   justify-content: space-around;
+   margin: 50px 0;
+}
+
+.info div {
+   width: 30%;
+   background: #fff;
+   padding: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info h2 {
+   text-align: center;
+   color: #43c6ac;
+}
+
+.info p {
+   color: #191654;
+}
+</style>
+<body>
+   <header>
+       <nav>
+           <ul>
+               <li><a href="#">HOME</a></li>
+               <li><a href="#">TICKETS</a></li>
+               <li><a href="#">PRE-PARTIES</a></li>
+               <li><a href="#">AFTERPARTIES</a></li>
+               <li><a href="#">MERCHANDISE</a></li>
+               <li><a href="#">FAQ</a></li>
+           </ul>
+       </nav>
+       <div class="logo">LOGO</div>
+       <button class="tickets">Tickets</button>
+   </header>
+   <section class="hero">
+       <h1>BIGGEST MUSIC FESTIVAL IS HERE!</h1>
+       <button>Book Now</button>
+   </section>
+   <section class="info">
+       <div>
+           <h2>LINEUP</h2>
+           <p>Artists performing from around the world, ready to rock your socks off.</p>
+       </div>
+       <div>
+           <h2>FESTIVAL MAP</h2>
+           <p>Explore the festival grounds with ease.</p>
+       </div>
+       <div>
+           <h2>TRANSPORTATION</h2>
+           <p>Safe and secure transportation options for all.</p>
+       </div>
+       <div>
+           <h2>FOOD PARK</h2>
+           <p>Enjoy a variety of food options from around the world.</p>
+       </div>
+       <div>
+           <h2>ACCESSIBILITY & INCLUSIVITY</h2>
+           <p>We believe in a festival that's accessible to all.</p>
+       </div>
+   </section>
+   <script src="code.js"></script>
+</body>
+</html>
